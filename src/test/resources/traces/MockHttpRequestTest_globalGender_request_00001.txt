@@ -1,0 +1,17 @@
+[Method]
+POST
+[HttpMessageHeader]
+Connection=Keep-Alive
+Content-Length=245
+Content-Type=application/json
+Host=localhost:51235
+User-Agent=Apache-HttpAsyncClient/4.1.3 (Java/1.8.0_171)
+[Path]
+/bank/_search
+[QueryParameters]
+allow_no_indices=true
+batched_reduce_size=512
+expand_wildcards=open
+ignore_unavailable=false
+search_type=query_then_fetch
+typed_keys=true
