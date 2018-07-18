@@ -45,7 +45,7 @@ public class CustomerRepositoryImplTest {
     // Port for host.
     private final static int SERVICE_PORT = 80;
     // The port at which our mock or proxy will be running.
-    private final static int	MOCK_AND_PROXY_PORT = 51235;
+    private final static int	MOCK_AND_PROXY_PORT = 9001;
     private final static String	MOCK_PROXY_URL	    = "http://localhost:" + MOCK_AND_PROXY_PORT;
 
     // Requests and responses will be logged to src/test/resources.
