@@ -1,4 +1,8 @@
-# faveeo-sample
+# Boilerplate project to use Elasticsearch REST API and Spring Boot
+
+[![Build Status](https://travis-ci.org/sleroy/faveeo-sample.svg?branch=master)](https://travis-ci.org/sleroy/faveeo-sample)
+
+Designed as a test for [Faveeo](http://www.faveeo.com/ "Faveeo website").  
 
 This project is a boilerplate project using Spring Boot, Elasticsearch REST Client, MockHttp library, Assert4J, Mockito, Swagger, PojoBuilder.
 
