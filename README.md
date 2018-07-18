@@ -10,11 +10,11 @@ The API is not secured yet but it's a good base.
 
 It's working with the Elasticsearch version 6.3 and the standard dataset (bank endpoint).
 
-## How to deploy
+## How to deploy
 
 just execute the executable jar file and configure your application.properties.
 
-## Integration tests
+## Integration tests
 
 I have provided two integration tests.
 
@@ -24,6 +24,6 @@ The second one is mocking the Elasticsearch REST API by providing traces stored 
 To commute between the Proxy and the mock mode, just change the mode for MODE.LOGGING from MODE.MOCKING.
 
 
-## Access to the Swagger UI
+## Access to the Swagger UI
 
 http://localhost:8080/swagger-ui.html
