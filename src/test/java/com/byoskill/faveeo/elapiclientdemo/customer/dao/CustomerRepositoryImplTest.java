@@ -29,9 +29,7 @@ import com.byoskill.faveeo.elapiclientdemo.customer.domain.GenderStatistics;
 import com.github.kristofa.test.http.MockAndProxyFacade;
 import com.github.kristofa.test.http.MockAndProxyFacade.Builder;
 import com.github.kristofa.test.http.MockAndProxyFacade.Mode;
-import com.github.kristofa.test.http.MockHttpServer;
 import com.github.kristofa.test.http.PassthroughForwardHttpRequestBuilder;
-import com.github.kristofa.test.http.SimpleHttpResponseProvider;
 import com.github.kristofa.test.http.file.FileHttpResponseProvider;
 import com.github.kristofa.test.http.file.HttpRequestResponseFileLoggerFactory;
 
@@ -45,8 +43,7 @@ public class CustomerRepositoryImplTest {
     // Port for host.
     private final static int SERVICE_PORT = 80;
     // The port at which our mock or proxy will be running.
-    private final static int	MOCK_AND_PROXY_PORT = 9001;
-    private final static String	MOCK_PROXY_URL	    = "http://localhost:" + MOCK_AND_PROXY_PORT;
+    private final static int MOCK_AND_PROXY_PORT = 9001;
 
     // Requests and responses will be logged to src/test/resources.
     // This is what you typically want to do and check them in with your source
@@ -61,9 +58,6 @@ public class CustomerRepositoryImplTest {
     private CustomerDatabaseConfiguration customerDatabaseConfiguration;
     @Autowired
     private CustomerRepository		  customerRepository;
-
-    private MockHttpServer	       server;
-    private SimpleHttpResponseProvider responseProvider;
 
     @Before
     public void setUp() throws Exception {

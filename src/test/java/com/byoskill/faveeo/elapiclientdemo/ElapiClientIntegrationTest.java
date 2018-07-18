@@ -44,7 +44,7 @@ public class ElapiClientIntegrationTest {
     private CustomerRestController customerRestController;
 
     @Before
-    public void setup() {
+    public void setUp() {
 	when(customerRepository.getGlobalGenderStatistics()).thenReturn(new GenderStatistics(5L, 10L));
 	when(customerRepository.findPeople(5)).thenReturn(Lists.newArrayList(new CustomerAccount("Sylvain Leroy", 0)));
 
